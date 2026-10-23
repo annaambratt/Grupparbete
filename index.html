@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#171b19">
+    <meta name="description" content="Ska du flytta hemifrån? Hitta färdigmatchade textilpaket som passar din stil och budget. MoodTex hjälper dig göra nya hemmet till ditt.">
+    <title>MoodTex — Nya hemmet. Egen stil.</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#hem" aria-label="MoodTex, till startsidan">mood<span>tex</span><i>.</i></a>
+      <nav class="main-nav" aria-label="Huvudmeny">
+        <a href="#sa-funkar-det">Så funkar det</a>
+        <a href="#paket">Paket & priser</a>
+        <a href="#varfor-moodtex">Varför MoodTex?</a>
+      </nav>
+      <a class="header-cta" href="#quiz">Hitta mitt paket <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="hem">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> SKA DU FLYTTA HEMIFRÅN?</p>
+          <h1>Nya hemmet.<br>Egen <em>stil.</em></h1>
+          <p class="hero-intro">Gör nya stället till ditt med textilier som passar ihop. Välj din stil och budget — vi hjälper dig hitta rätt, utan att du behöver lägga timmar på att jämföra kuddar, plädar och färger.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#quiz">Hitta mitt paket <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#paket">Se paket & priser <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-icon" aria-hidden="true">✳</span>
+            <p><strong>Matchat från start.</strong><br>Tydliga paket i olika prisklasser.</p>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1400&q=85" alt="Varmt och ombonat vardagsrum i naturliga toner">
+          <div class="image-caption">
+            <span class="caption-kicker">DITT HEM, DIN STIL</span>
+            <span class="caption-title">Lugnt. Genomtänkt. Ditt.</span>
+            <span class="caption-swatch" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          </div>
+          <span class="hero-sticker"><span aria-hidden="true">✳</span> Enklare än att gissa</span>
+        </div>
+      </section>
+
+      <section class="value-strip" aria-label="MoodTex i korthet">
+        <p>Du väljer stilen.</p>
+        <span aria-hidden="true">✳</span>
+        <p>Vi matchar textilierna.</p>
+        <span aria-hidden="true">✳</span>
+        <p>Du kommer hem.</p>
+      </section>
+
+      <section class="quiz-section section-pad" id="quiz">
+        <div class="section-heading quiz-heading">
+          <p class="eyebrow">DIN STIL, UTAN GISSNINGAR</p>
+          <h2>Få ihop rummet.<br>Inte fler flikar.</h2>
+          <p>Välj din stil och budget. På 30 sekunder får du en matchad textilidé — så slipper du gissa vad som passar ihop.</p>
+          <div class="quiz-progress" aria-hidden="true"><span></span><span></span><span></span></div>
+          <p class="progress-label">TAR BARA CIRKA 30 SEK</p>
+        </div>
+
+        <div class="quiz-card">
+          <form id="style-quiz">
+            <fieldset class="quiz-question">
+              <legend><span class="question-number">01</span> Vilken stil passar ditt hem?</legend>
+              <div class="choice-grid style-choices">
+                <label class="choice-card">
+                  <input type="radio" name="style" value="nordisk" checked>
+                  <span class="choice-art art-nordisk" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span class="choice-label">Nordiskt lugn</span>
+                  <span class="choice-detail">Ljust & avskalat</span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="style" value="jordnara">
+                  <span class="choice-art art-jordnara" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span class="choice-label">Jordnära</span>
+                  <span class="choice-detail">Mjukt & naturligt</span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="style" value="kontrast">
+                  <span class="choice-art art-kontrast" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span class="choice-label">Mer kontrast</span>
+                  <span class="choice-detail">Färg & karaktär</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="quiz-question mood-question">
+              <legend><span class="question-number">02</span> Vilken känsla vill du komma hem till?</legend>
+              <div class="mood-choices">
+                <label><input type="radio" name="mood" value="lugn" checked><span>Lugnt</span></label>
+                <label><input type="radio" name="mood" value="varmt"><span>Varmt</span></label>
+                <label><input type="radio" name="mood" value="energiskt"><span>Fullt av liv</span></label>
+              </div>
+            </fieldset>
+
+            <div class="quiz-question budget-question">
+              <label class="budget-label" for="budget"><span class="question-number">03</span> Hur mycket vill du lägga?</label>
+              <div class="budget-select-wrap">
+                <select id="budget" name="budget">
+                  <option value="1500">Upp till 1 500 kr</option>
+                  <option value="2500" selected>Upp till 2 500 kr</option>
+                  <option value="3500">Upp till 3 500 kr</option>
+                </select>
+                <span aria-hidden="true">⌄</span>
+              </div>
+            </div>
+
+            <button class="button button-dark quiz-submit" type="submit">Visa mitt paket <span aria-hidden="true">↗</span></button>
+          </form>
+
+          <div class="quiz-result" id="quiz-result" aria-live="polite" hidden>
+            <div class="result-topline"><span class="result-icon" aria-hidden="true">✳</span><span>DIN MATCHNING</span></div>
+            <div class="result-body">
+              <div class="result-copy">
+                <p class="result-mood" id="result-mood"></p>
+                <h3 id="result-title"></h3>
+                <p id="result-description"></p>
+                <ul class="result-items" id="result-items"></ul>
+              </div>
+              <div class="result-price">
+                <span>PAKETPRIS</span>
+                <strong id="result-price"></strong>
+                <small>Exempel på textilpaket</small>
+              </div>
+            </div>
+            <a class="button button-dark result-link" href="#paket">Utforska paketen <span aria-hidden="true">↗</span></a>
+            <button class="quiz-reset" type="button" id="quiz-reset">Ändra mina val</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="packages-section section-pad" id="paket">
+        <div class="packages-heading">
+          <div>
+            <p class="eyebrow">TEXTILPAKET FÖR DITT HEM</p>
+            <h2>Välj paket. Skippa gissandet.</h2>
+          </div>
+          <p>Du behöver inte kunna inredning eller köpa allt på en gång. Börja med ett paket som matchar din budget, och bygg vidare när du vill.</p>
+        </div>
+        <div class="package-grid">
+          <article class="package-card">
+            <div class="package-image package-image-one">
+              <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&w=900&q=80" alt="Ljust vardagsrum med mjuka naturmaterial" loading="lazy">
+              <span class="package-number">01 / START</span>
+            </div>
+            <div class="package-content">
+              <div class="package-name-row"><h3>Börja enkelt</h3><span>1 290 kr</span></div>
+              <p>Gör soffan mer inbjudande med två kuddar och en pläd som passar ihop.</p>
+              <div class="package-tags"><span>2 kuddfodral</span><span>Pläd</span></div>
+              <a href="#quiz" class="package-link" data-package="start">Hitta mitt paket <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="package-card package-card-featured">
+            <div class="package-image package-image-two">
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Inbjudande vardagsrum i varma, jordnära färger" loading="lazy">
+              <span class="package-number">02 / HELHET</span>
+              <span class="popular-label">POPULÄR START</span>
+            </div>
+            <div class="package-content">
+              <div class="package-name-row"><h3>Få ihop helheten</h3><span>2 290 kr</span></div>
+              <p>Matcha soffan och sängen med detaljer som gör att rummet känns genomtänkt.</p>
+              <div class="package-tags"><span>2 kuddfodral</span><span>Sängkläder</span><span>Pläd</span></div>
+              <a href="#quiz" class="package-link" data-package="helhet">Hitta mitt paket <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="package-card">
+            <div class="package-image package-image-three">
+              <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80" alt="Välkomnande hem med djupa färger och texturer" loading="lazy">
+              <span class="package-number">03 / KOMPLETT</span>
+            </div>
+            <div class="package-content">
+              <div class="package-name-row"><h3>Gör det komplett</h3><span>3 290 kr</span></div>
+              <p>Från kuddar till gardiner — en tydlig röd tråd genom hela rummet.</p>
+              <div class="package-tags"><span>2 kuddfodral</span><span>Sängkläder</span><span>Pläd</span><span>Gardiner</span></div>
+              <a href="#quiz" class="package-link" data-package="komplett">Hitta mitt paket <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="package-disclaimer">Exempelpaket och priser — MoodTex har ännu ingen livebutik eller kassa.</p>
+      </section>
+
+      <section class="how-section section-pad" id="sa-funkar-det">
+        <div class="how-image">
+          <img src="https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=crop&w=1200&q=85" alt="Mjuka textilier och genomtänkta detaljer i ett hem" loading="lazy">
+          <div class="how-image-note"><span aria-hidden="true">↗</span><p>Stil som<br>känns självklar.</p></div>
+        </div>
+        <div class="how-copy">
+          <p class="eyebrow">TRE ENKLA STEG. NOLL INREDNINGSPRESS.</p>
+          <h2>Från flyttkartonger till <em>“här bor jag.”</em></h2>
+          <p class="how-intro">Du har nog att tänka på när du flyttar. Att matcha textilier ska inte behöva bli ännu ett projekt.</p>
+          <ol class="steps">
+            <li><span>01</span><div><h3>Välj vad du gillar</h3><p>Tre snabba val om stil, känsla och vad du vill lägga.</p></div></li>
+            <li><span>02</span><div><h3>Se vad som passar ihop</h3><p>Få ett färdigt exempel med produkter som matchar.</p></div></li>
+            <li><span>03</span><div><h3>Gör nya stället till ditt</h3><p>Börja med detaljerna — och bygg vidare i din takt.</p></div></li>
+          </ol>
+          <a class="text-link" href="#quiz">Hitta mitt paket <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="why-section" id="varfor-moodtex">
+        <div class="why-inner">
+          <p class="eyebrow">ETT HEM SOM KÄNNS SOM DITT.</p>
+          <h2>Du behöver inte<br>vara inredare.</h2>
+          <p>Det räcker att veta vad du gillar. MoodTex hjälper dig hitta textilier som passar ihop och hålla koll på budgeten — så känns det nya stället mer som ditt.</p>
+          <a class="button button-light" href="#quiz">Hitta mitt paket <span aria-hidden="true">↗</span></a>
+          <span class="why-spark" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <section class="closing section-pad">
+        <p class="eyebrow">NÄSTA STEG? GÖR DET TILL DITT.</p>
+        <h2>Mindre velande.<br><em>Mer hemma.</em></h2>
+        <a class="button button-dark" href="#quiz">Hitta mitt paket <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="#hem" aria-label="MoodTex, till startsidan">mood<span>tex</span><i>.</i></a>
+      <p>Matchande textilier. Ett hem som känns som ditt.</p>
+      <a href="#hem">Till toppen ↑</a>
+      <span class="footer-note">© MoodTex · En idé om ett mer personligt hem</span>
+    </footer>
+  </body>
+</html>
