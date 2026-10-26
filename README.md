@@ -15,6 +15,6 @@ En responsiv, svenskspråkig portfolio för Anna Ambratt. Webbplatsen är byggd 
 - `assets/anna-vardag.jpg` är det andra porträttet i det personliga bildcollaget.
 - Porträtten är exporterade för webben i sRGB och hög kvalitet. Collaget använder samma varma färger och mjuka former som resten av sidan.
 - `assets/citron-gren.svg` är den diskreta botaniska detaljen i hero och bildcollage.
-- CV:t innehåller ingen LinkedIn-länk. Lägg till en verifierad profiladress i `index.html` när den finns.
+- LinkedIn-knappar i navigation, kontaktsektion och sidfot länkar till Annas profil i en ny flik.
 
 Kontaktuppgifterna och meritförteckningen på sidan är hämtade från Annas bifogade CV. LIA-inriktningar och den personliga introduktionen följer briefen.
